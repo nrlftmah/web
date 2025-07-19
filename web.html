@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>nrl</title>
+  <link rel="stylesheet" href="web.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Toggle Dark/Light Mode -->
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="modeToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <!-- KIRI: Profil & About -->
+    <div class="left-column">
+      <section class="intro">
+        <div class="intro-text">
+          <h1>haiiii aku <span class="highlight">nurul</span></h1>
+          <p>pelajar | suka musik, sunset, kopi ;p</p>
+        </div>
+
+        <div class="intro-polaroid">
+          <img src="img/nrl1.jpg" alt="Foto 1" class="polaroid left">
+          <img src="img/nrl2.jpg" alt="Foto 2" class="polaroid right">
+        </div>
+      </section>
+
+      <section class="about">
+        <h2>about meee ( •̀ .̫ •́ )✧</h2>
+        <div class="about-content">
+          <div>
+            <p>nama panjangku?? NURULLLLLLLLLLLLL</p>
+            <p>aku umur 16 gais (taun depan udh 17 anjir takut bgt)</p>
+            <p>rumahku disleman tepatnya di donokerto kec turii.</p>
+            <p>btw aku salah satu aud nya stembayo bagian utak atik laptop WKWK.</p>
+            <p>ttl ytta ajadeh yaakk</p>
+            <p>jgn ditanya makanan fav ku apa, banyak soalnyaa</p>
+            <p>eeee itu ajadeh gaiss ehe</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- KANAN: Lagu Favorit -->
+    <div class="right-column">
+      <section class="music">
+        <h2>my top 3 songs</h2>
+        <div class="song-grid">
+          <!-- Lagu 1 -->
+          <div class="song-card">
+            <img src="img/akulahdia.jpg" alt="Akulah Dia" class="song-cover">
+            <div class="song-info">
+              <h3>Akulah Dia</h3>
+              <p>Drive</p>
+              <span>10K Likes • 11.5K Views</span>
+              <audio controls>
+                <source src="audio/akulahdia.mp3" type="audio/mpeg">
+                Browser kamu tidak mendukung audio.
+              </audio>
+            </div>
+          </div>
+          <!-- Lagu 2 -->
+          <div class="song-card">
+            <img src="img/friend.jpg" alt="Just A Friend To You" class="song-cover">
+            <div class="song-info">
+              <h3>Just A Friend To You</h3>
+              <p>Meghan Trainor</p>
+              <span>9.2K Likes • 15K Views</span>
+              <audio controls>
+                <source src="audio/friend.mp3" type="audio/mpeg">
+                Browser kamu tidak mendukung audio.
+              </audio>
+            </div>
+          </div>
+          <!-- Lagu 3 -->
+          <div class="song-card">
+            <img src="img/bersamanya.jpg" alt="Hari Bersamanya" class="song-cover">
+            <div class="song-info">
+              <h3>Hari Bersamanya</h3>
+              <p>Sheila On 7</p>
+              <span>13.1K Likes • 20K Views</span>
+              <audio controls>
+                <source src="audio/bersamanya.mp3" type="audio/mpeg">
+                Browser kamu tidak mendukung audio.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("modeToggle").addEventListener("change", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+
+</body>
+</html>
